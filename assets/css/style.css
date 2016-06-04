@@ -355,6 +355,7 @@ position: relative;
 -o-transition: all 0.2s ease;
 transition: all 0.2s ease;
 margin-bottom:30px;
+background-color: rgba(0, 0, 0, 0.75);
 }
 .team-wrapper:hover {
 -webkit-transform: scale(1.1);
@@ -369,7 +370,7 @@ background-position: center;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 padding: 150px 0 10px;
-/*background-image: url('../img/girl-big.jpg');*/
+background-position: top;
 border-top: 1px solid #fff;
 border-right: 1px solid #fff;
 border-left: 1px solid #fff;
@@ -402,7 +403,6 @@ text-decoration: none;
 background-color: rgb(40, 141, 203);
 }
 
-
 .team-wrapper .description {
 padding: 30px 20px 20px;
 text-align: center;
@@ -414,8 +414,6 @@ border-left: 1px solid #fff;
 .team-wrapper .description h5 {
 color: rgb(40, 141, 203);
 }
-
-
 
 /*============================
 CONTACT SECTION STYLES
@@ -471,6 +469,7 @@ a:hover {
 }
 
 .google-maps {
+  margin-top: 1em;
   position: relative;
   height: 400px;
   overflow: hidden;
@@ -485,4 +484,20 @@ a:hover {
 
 .btn {
   font-size: 18px;
+}
+
+.vegas-overlay {
+    opacity: 1.0;
+}
+
+.text-box {
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid 3px black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  margin-bottom: 120px;
 }
