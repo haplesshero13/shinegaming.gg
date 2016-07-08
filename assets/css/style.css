@@ -115,6 +115,10 @@ margin: 10px 20px 10px 20px;
 color: #FFF;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover {
+  -webkit-transform: scale(1.2);
+}
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
 color: #fff;
 font-weight: 900;
@@ -124,6 +128,7 @@ font-family: 'Oswald', sans-serif;
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
 border-color: transparent;
 }
+
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 background-color: rgb(40, 141, 203);
 }
@@ -138,6 +143,10 @@ max-height: 50px;
 }
 .navbar-right {
   margin-top: 15px;
+}
+
+.menu:hover {
+  font-size: 20px;
 }
 
 
@@ -339,6 +348,15 @@ filter: alpha(opacity=80); /* ie lt 7 */
 padding-top: 10px;
 }
 
+/*============================
+SCHEDULE SECTION STYLES
+==============================*/
+.schedule-image{
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /*============================
