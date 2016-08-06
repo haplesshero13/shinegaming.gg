@@ -1,4 +1,4 @@
-﻿
+
 /*=============================================================
     Authour URL: www.designbootstrap.com
 
@@ -119,6 +119,13 @@ color: #FFF;
   -webkit-transform: scale(1.2);
 }
 
+@media screen and (max-width: 768px) and (min-width: 100px) {
+  .navbar-inverse .navbar-nav > li > a:hover {
+  -webkit-transform: scale(1.2);
+  padding-left: 40px;
+  }  
+}
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
 color: #fff;
 font-weight: 900;
@@ -126,7 +133,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-border-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
@@ -143,6 +150,7 @@ max-height: 50px;
 }
 .navbar-right {
   margin-top: 15px;
+  overflow: hidden;
 }
 
 .menu:hover {
@@ -317,6 +325,18 @@ color: #fff;
 transition-duration: 0.8s;
 }
 
+.work-overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   margin-left: 0;
+   margin-right: auto;
+   height:400px; /* your iframe height */
+   top:400px;  /* your iframe height */
+   margin-top:-410px;  /* your iframe height */
+   z-index: 100;
+}
+
 #venue .work-wrapper {
 padding: 10px;
 border-radius: 5px;
@@ -357,6 +377,99 @@ SCHEDULE SECTION STYLES
   margin-left: auto;
   margin-right: auto;
 }
+
+.schedule-embed{
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+  width: 100%;
+  height: 80vh;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px) {
+  .overlay{
+    width: 97%!important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .overlay{
+    width: 99%!important;
+  }
+}
+
+.schedule-wrapper {
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin-bottom: 40px;
+background-color: rgba(255, 255, 255, 0.1);
+cursor: pointer;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+border: 1px solid rgb(40, 141, 203);
+}
+
+.schedule-wrapper:hover {
+background-color: transparent;
+border: 1px solid rgb(40, 141, 203);
+
+opacity: .90; /* standard: ff gt 1.5, opera, safari */
+-ms-filter: "alpha(opacity=90)"; /* ie 8 */
+filter: alpha(opacity=90); /* ie lt 7 */
+-khtml-opacity: .90; /* safari 1.x */
+-moz-opacity: .90; /* ff lt 1.5, netscape */
+
+}
+
+.schedule-overlay {
+   background:transparent; 
+   position:relative; 
+   width:98%;
+   margin-left: 0;
+   margin-right: auto;
+   height:78vh; /* your iframe height */
+   top:78vh;  /* your iframe height */
+   margin-top:-78vh;  /* your iframe height */
+}
+
+#schedule .container{
+  width: 85%;
+}
+
+.schedule-button{
+  height: 75px;
+  width: 300px;
+  background-color: rgb(40, 141, 203);
+  border-radius: 7px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transform: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  line-height: 125%;
+}
+
+.schedule-button:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}  
 
 /*============================
 STREAM SECTION STYLES
@@ -451,10 +564,10 @@ STREAM SECTION STYLES
 }
 
 /*============================
-SCHEDULE SECTION STYLES
+BRACKET SECTION STYLES
 ==============================*/
 
-.schedule-wrapper {
+.bracket-wrapper {
   overflow-x: hidden;
   position: relative;
   -webkit-transition: all 0.2s ease;
@@ -472,14 +585,14 @@ SCHEDULE SECTION STYLES
   border-top-right-radius:10px;
 }
 
-.schedule-wrapper:hover {
+.bracket-wrapper:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-.schedule-wrapper .schedule-inner {
+.bracket-wrapper .bracket-inner {
   background-size: cover;
   background-position: center;
   -moz-background-size: cover;
@@ -492,7 +605,7 @@ SCHEDULE SECTION STYLES
   border-radius: 10px 10px 0px 0px;
 }
 
-.schedule-wrapper > .schedule-inner > a {
+.bracket-wrapper > .bracket-inner > a {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -516,13 +629,13 @@ SCHEDULE SECTION STYLES
   transition: all 0.8s ease-in-out;
 }
 
-.schedule-wrapper > .schedule-inner > a:hover {
+.bracket-wrapper > .bracket-inner > a:hover {
   color: #fff;
   text-decoration: none;
   background-color: #6441A5;
 }
 
-.schedule-wrapper .description {
+.bracket-wrapper .description {
   padding: 30px 20px 20px;
   text-align: center;
   border-bottom: 1px solid #fff;
@@ -530,7 +643,7 @@ SCHEDULE SECTION STYLES
   border-left: 1px solid #fff;
 }
 
-.schedule-wrapper .description h5 {
+.bracket-wrapper .description h5 {
   color: rgb(40, 141, 203);
 }
 
