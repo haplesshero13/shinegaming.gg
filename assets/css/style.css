@@ -382,9 +382,6 @@ SCHEDULE SECTION STYLES
 border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
-  width: 100%;
-  height: 80vh;
-  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -414,10 +411,12 @@ cursor: pointer;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
 border: 1px solid rgb(40, 141, 203);
+  width: 100%;
+  height: 80vh;
+  background: white;
 }
 
 .schedule-wrapper:hover {
-background-color: transparent;
 border: 1px solid rgb(40, 141, 203);
 
 opacity: .90; /* standard: ff gt 1.5, opera, safari */
@@ -438,7 +437,27 @@ filter: alpha(opacity=90); /* ie lt 7 */
    top:78vh;  /* your iframe height */
    margin-top:-78vh;  /* your iframe height */
    cursor: default;
+   z-index: 100;
 }
+
+#frame {  
+    -ms-zoom: 0.9;
+    -ms-transform-origin: 0 0;
+    -moz-transform: scale(0.9);
+    -moz-transform-origin: 0px 50px;
+    -o-transform: scale(0.9);
+    -o-transform-origin: 0px 50px;
+    -webkit-transform: scale(0.9);
+    -webkit-transform-origin: 5% 0;
+}
+
+#frame {
+    width: 110.5%;
+    height: 88.5vh;
+    overflow: hidden;
+    margin: 1px;
+}
+
 
 #schedule .container{
   width: 85%;
