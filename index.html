@@ -148,6 +148,7 @@
       <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
         <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 col-xs-offset-1 col-md-offset-2 html">
           <div class="work-wrapper google-maps">
+            <div class="work-overlay" onClick="style.pointerEvents='none'"></div>
             <iframe
               width="600"
               height="450"
@@ -170,8 +171,14 @@
           <hr />
         </div>
       </div>
-      <div class="row animate-in" data-anim-type="fade-in-up">
-        <img class="schedule-image" src="assets/img/schedule.png">
+      <div class="row animate-in" style="width: 100%" data-anim-type="fade-in-up">
+      <div class="schedule-wrapper">
+        <div class="schedule-overlay">
+          <a class="full-link" href="https://docs.google.com/spreadsheets/d/1X5ky-CyXt2rPXKZf8e_hgcfHJILrikyPGSDU1xh6a-g/edit#gid=641506352" target="_blank"></a>
+        </div>
+          <iframe frameborder="0" id="frame" style="border:0" class="schedule-embed" src="https://docs.google.com/spreadsheets/d/1X5ky-CyXt2rPXKZf8e_hgcfHJILrikyPGSDU1xh6a-g/pubhtml?gid=641506352&amp;single=true&amp;headers=false&amp;widget=false&amp;chrome=false&amp;output=html "></iframe>
+        </div>
+        <!--<img class="schedule-image" src="assets/img/schedule.png">-->
       </div>
     </div>
   </section>
@@ -227,9 +234,9 @@
       </div>
       <div class="row animate-in" data-anim-type="fade-in-up">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" style="margin-left: 37.5%">
-            <div class="schedule-wrapper">
+            <div class="bracket-wrapper">
               <a class="full-link" href="https://www.smash.gg/shine"></a>
-              <div class="schedule-inner"
+              <div class="bracket-inner"
                    style="background-image: url('assets/img/bracket.png'); background-position-y: -40px;">
                 <a class="logo" href="https://www.smash.gg/shine" target="_blank"> <i class="fa"></i></a>
               </div>
