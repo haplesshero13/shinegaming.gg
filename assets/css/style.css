@@ -494,6 +494,29 @@ filter: alpha(opacity=90); /* ie lt 7 */
 /*============================
 STREAM SECTION STYLES
 ==============================*/
+.logo-hitbox{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin: 0 auto -50px;
+  display: block;
+  background-image: url("../../assets/img/icon_hitbox.png") !important;
+  background-size: 80px 80px;
+  background-position-y: 0px;
+  background-position-x: 0px;
+  background-repeat: no-repeat;
+  /*color: #6441A5; /*Twitch purple*/
+  z-index: 999;
+  font-size: 40px;
+  padding: 15px 22px;
+  background-color: #fff;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
 
 .full-link{
   position: absolute;
